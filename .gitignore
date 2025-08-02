@@ -25,6 +25,8 @@ hs_err_pid*
 build/
 !gradle/wrapper/gradle-wrapper.jar
 
+target/
+
 # Common OS files
 .DS_Store
 Thumbs.db
