@@ -1,4 +1,4 @@
-package main;
+package main.java.net.vincent.PopStar;
 
 import java.awt.Color;
 

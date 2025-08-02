@@ -1,4 +1,4 @@
-package main;
+package main.java.net.vincent.PopStar;
 
 import javax.swing.JFrame;
 
