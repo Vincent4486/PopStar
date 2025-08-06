@@ -7,6 +7,8 @@ import javax.swing.*;
 @SuppressWarnings("serial")
 public class PopStarFrame extends JPanel{
 
+	PropertiesData propertiesData;
+
 	JTextField recordField;
 	JTextField targetField;
 	JTextField currentField;
@@ -18,6 +20,8 @@ public class PopStarFrame extends JPanel{
 	public int stageInt = 0;
 	
 	public PopStarFrame() {
+
+		propertiesData = new PropertiesData(this);
 
 		Font font = new Font("Comic Sans", Font.BOLD, 20);
 
@@ -84,6 +88,7 @@ public class PopStarFrame extends JPanel{
 		this.add(scoreBoard);
 
 		setScoreBoardText();
+		propertiesData.loadProperties();
 		
 	}
 
