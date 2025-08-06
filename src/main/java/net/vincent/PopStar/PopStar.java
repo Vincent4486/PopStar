@@ -12,8 +12,8 @@ public class PopStar {
 		frame.setSize(600, 800);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		PopStarFrame popStarrame = new PopStarFrame();
-		frame.add(popStarrame);
+		PopStarFrame popStarFrame = new PopStarFrame();
+		frame.add(popStarFrame);
 		
 		frame.setVisible(true);
 
