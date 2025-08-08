@@ -7,8 +7,6 @@ import javax.swing.*;
 @SuppressWarnings("serial")
 public class PopStarFrame extends JPanel{
 
-	PropertiesData propertiesData;
-
 	JTextField recordField;
 	JTextField targetField;
 	JTextField currentField;
@@ -21,9 +19,9 @@ public class PopStarFrame extends JPanel{
 	
 	public PopStarFrame() {
 
-		propertiesData = new PropertiesData(this);
-
 		Font font = new Font("Comic Sans", Font.BOLD, 20);
+
+		PropertiesData propertiesData = new PropertiesData(this);
 
 		JLabel recordScore = new JLabel("Record:");
 		recordScore.setFont(font);
@@ -87,9 +85,10 @@ public class PopStarFrame extends JPanel{
 		this.setLayout(null);
 		this.add(scoreBoard);
 
+		propertiesData.load();
+
 		setScoreBoardText();
-		propertiesData.loadProperties();
-		
+
 	}
 
 	public void setScoreBoardText(){
