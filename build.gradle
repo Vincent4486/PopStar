@@ -21,7 +21,7 @@ sourceSets {
     main {
         java {
             // Adjust this if your source files are directly under "src", or use "src/java" if organized that way.
-            srcDirs = ['src']
+            srcDirs = ['src/main/java']
         }
         resources {
             srcDirs = ['res']
@@ -44,7 +44,7 @@ java {
 jar {
     manifest {
         attributes(
-                'Main-Class': 'main.java.net.vincent.PopStar.PopStar',
+                'Main-Class': 'net.vincent.PopStar.PopStar',
                 'Implementation-Title': project.name,
                 'Implementation-Version': 'Beta1_0'
         )

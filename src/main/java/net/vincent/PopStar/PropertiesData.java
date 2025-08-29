@@ -1,4 +1,4 @@
-package main.java.net.vincent.PopStar;
+package net.vincent.PopStar;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
