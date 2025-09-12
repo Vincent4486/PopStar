@@ -22,6 +22,8 @@ public class PopStarFrame extends JPanel{
 		Font font = new Font("Comic Sans", Font.BOLD, 20);
 
 		PropertiesData propertiesData = new PropertiesData(this);
+		Tiles tiles = new Tiles();
+		GameFrame gameFrame = new GameFrame();
 
 		JLabel recordScore = new JLabel("Record:");
 		recordScore.setFont(font);
@@ -84,6 +86,7 @@ public class PopStarFrame extends JPanel{
 		this.setBackground(new Color(0x231969));
 		this.setLayout(null);
 		this.add(scoreBoard);
+		this.add(gameFrame);
 
 		propertiesData.load();
 
